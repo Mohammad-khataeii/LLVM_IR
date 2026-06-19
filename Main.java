@@ -31,8 +31,12 @@ public class Main {
         }
 
         if (args.length == 2) {
-            /* Optional file output */
+            /* LLVM IR file output. */
             Path outputPath = Paths.get(args[1]);
+            Path parent = outputPath.getParent();
+            if (parent != null) {
+                Files.createDirectories(parent);
+            }
             Files.writeString(outputPath, ir, StandardCharsets.UTF_8);
         } else {
             runIr(ir);

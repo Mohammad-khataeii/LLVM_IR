@@ -20,6 +20,14 @@ java -cp ".;java-cup-11b.jar" Main tests/base.txt
 
 This runs the base source program and prints only the final result.
 
+## Generate LLVM IR
+
+```sh
+java -cp ".;java-cup-11b.jar" Main tests/base.txt build/base.ll
+```
+
+This writes the generated LLVM IR into `build/base.ll`.
+
 Additional runs:
 
 ```sh
