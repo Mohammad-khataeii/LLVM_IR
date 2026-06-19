@@ -1,0 +1,31 @@
+% Programma completo alternativo 2
+
+N = 3;
+
+A = [3 1 2;
+     0 4 1;
+     2 2 5];
+
+B = [1 0 0;
+     0 1 0;
+     0 0 1];
+
+B(1,3) = 2;
+B(3,1) = 4;
+
+C = A + B;
+D = A * B;
+E = C * D;
+
+for i = 3:1
+    for j = 1:3
+        if E(i,j) >= 30
+            E(i,j) = E(i,j) - 7;
+        else
+            E(i,j) = E(i,j) + 3;
+        end
+    end
+end
+
+disp(D);
+disp(E);

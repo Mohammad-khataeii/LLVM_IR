@@ -1,0 +1,25 @@
+% Programma with matrices e multiplications
+
+N = 3;
+
+V = [1, 3, 9];
+
+A = [1 2 3;
+     4 5 6;
+     7 8 9];
+
+B = [1 0 0;
+     0 1 0;
+     0 0 1];
+
+B(1,2) = 2;
+B(2,3) = 3;
+
+C = A + B;
+D = A * B;
+E = C * D;
+X = N * 2;
+
+disp(D);
+disp(E);
+disp(X);

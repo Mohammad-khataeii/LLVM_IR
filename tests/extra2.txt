@@ -1,0 +1,10 @@
+% Feature extra alternativo 2
+
+M = [3 1;
+     2 4];
+
+K = 5 * M;
+Y = K(1,2) * K(2,1);
+
+disp(K);
+disp(Y);

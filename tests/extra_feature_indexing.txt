@@ -1,0 +1,10 @@
+% Feature extra: accesso a matrice dentro espressioni e prodotto scalare
+
+M = [2 4;
+     6 8];
+
+K = M * 2;
+Y = K(2,1) + K(1,2);
+
+disp(K);
+disp(Y);
