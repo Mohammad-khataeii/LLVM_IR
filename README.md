@@ -46,6 +46,8 @@ java -cp ".;java-cup-11b.jar" Main tests/extra1.txt
 java -cp ".;java-cup-11b.jar" Main tests/extra2.txt
 ```
 
+There are 2 branches: `main` keeps LLVM generation inside `parser.cup`, while `parser-separated-to-java` moves it into separate Java classes.
+
 ## Implemented Features
 
 - scalar assignment
